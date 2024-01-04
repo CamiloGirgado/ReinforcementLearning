@@ -10,8 +10,8 @@ class KArmBandit:
         self.k = k
         self.step_size = step_size
         self.epsilon = epsilon
-        self.q_estimates = [0.0] * k
-        self.action_counts = [0] * k
+        self.q_estimates = [0.0] * k # Initialize list of K items for estimate creation
+        self.action_counts = [0] * k # Initialize list of K items for action creation
 
     def choose_action(self):
         # Epsilon-greedy exploration
